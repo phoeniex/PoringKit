@@ -9,6 +9,6 @@ import Foundation
 
 infix operator =?
 func =? <Object>(lhs: inout Object, rhs: Object?) {
-  guard let value = rhs as? Any as? Object else { return }
+  guard let value = rhs as Any as? Object else { return }
   lhs = value
 }
