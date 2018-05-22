@@ -1,23 +1,23 @@
 {
   "constants": {
-    "allianz_color": "#FA8B98",
+    "poring_color": "#FA8B98",
     "rounded_corner": 20
   },
   "shared": {
     "font_family": "avenir",
     "segmented_control": {
-      "tint_color": "$allianz_color"
+      "tint_color": "$poring_color"
     },
     "page_control": {
       "color": "light_gray",
-      "current_color": "$allianz_color"
+      "current_color": "$poring_color"
     },
     "switch": {
-      "active_color": "$allianz_color",
+      "active_color": "$poring_color",
       "thumb_color": "#EEE"
     },
     "navigation_bar": {
-      "bar_color": "$allianz_color",
+      "bar_color": "$poring_color",
       "translucent": false,
       "font_family": "avenir",
       "font_style": "medium",
@@ -35,7 +35,7 @@
     },
     "toolbar": {
       "tint_color": "white",
-      "bar_color": "$allianz_color",
+      "bar_color": "$poring_color",
       "translucent": false
     },
     "text_view": {
@@ -43,7 +43,7 @@
       "font_size": 13,
       "border_style": "line",
       "border_width": 1,
-      "border_color": "$allianz_color",
+      "border_color": "$poring_color",
       "corner_radius": "$rounded_corner"
     },
     "text_field": {
@@ -51,7 +51,7 @@
       "font_size": 16,
       "border_style": "line",
       "border_width": 1,
-      "border_color": "$allianz_color"
+      "border_color": "$poring_color"
     }
   },
   "fonts": {
@@ -64,16 +64,16 @@
     "corner_radius": "$rounded_corner",
     "text_color": "white",
     "font_family": "avenir",
-    "background_color": "$allianz_color"
+    "background_color": "$poring_color"
   },
   "ghost_button": {
-    "border_color": "$allianz_color",
+    "border_color": "$poring_color",
     "border_width": 2,
     "corner_radius": "$rounded_corner",
 
     "font_family": "avenir",
-    "text_color": "$allianz_color",
-    "text_color_disable": "$allianz_color",
+    "text_color": "$poring_color",
+    "text_color_disable": "$poring_color",
     "background_color": "clear"
   },
   "general_input": {
@@ -84,11 +84,11 @@
   "title_text": {
     "font_size": 22,
     "font_style": "medium",
-    "text_color": "$allianz_color"
+    "text_color": "$poring_color"
   },
   "detail_text": {
     "font_size": 16,
-    "text_color": "$allianz_color"
+    "text_color": "$poring_color"
   },
   "round_image_view": {
     "corner_radius": "$rounded_corner",

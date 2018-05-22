@@ -1,6 +1,6 @@
 //
 //  UIColor+Decodable.swift
-//  AllianzUIKit
+//  Pods
 //
 //  Created by Rawipon Srivibha on 20/2/18.
 //

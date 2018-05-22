@@ -2,7 +2,8 @@
 //  PoringStyleSheet+UIPageControl.swift
 //  Pods
 //
-// Created by Rawipon Srivibha on 8/22/17.
+//  Created by Rawipon Srivibha on 8/22/17.
+//
 //
 
 import Fashion

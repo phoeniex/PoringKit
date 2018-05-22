@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  AZPoringKit
+//  PoringKit_Example
 //
 //  Created by Rawipon Srivibha on 05/16/2017.
 //  Copyright (c) 2017 Rawipon Srivibha. All rights reserved.

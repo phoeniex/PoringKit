@@ -5,8 +5,10 @@ PODS:
   - PoringKit (1.0.0):
     - CryptoSwift (>= 0.7.1)
     - Fashion (>= 4.0.0)
+    - SwiftyTimer
   - Quick (1.2.0)
   - SwiftLint (0.25.0)
+  - SwiftyTimer (2.0.0)
 
 DEPENDENCIES:
   - Nimble
@@ -22,10 +24,11 @@ SPEC CHECKSUMS:
   CryptoSwift: 6b90cb3227de5ad1b034a0156f5c027399aea60c
   Fashion: 939fc05c7375625ed7d36318d1ebb1a80439d478
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
-  PoringKit: 48fc784411edf2f72d5f42d852f3c6ee9129af33
+  PoringKit: d33eaece9915d8a3c56c82b8d563516c3fe86982
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
   SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
+  SwiftyTimer: 2efd74b060d69ad4f1496baf5bbedbe132125fcf
 
-PODFILE CHECKSUM: 281ba0955985d49fca063b873bce25f2af4df7d2
+PODFILE CHECKSUM: 7ebee0f815880418644a637a4864c15711ca2fe2
 
 COCOAPODS: 1.4.0

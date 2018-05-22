@@ -20,9 +20,9 @@ struct CustomTextFieldPoringStyle: Codable {
 class CustomTextField: UITextField, PoringStyleElement {
   
   func apply(_ styleData: Data) {
-//    if let style = try? JSONDecoder().decode(CustomTextFieldPoringStyle.self, from: styleData) {
-//      text = style.custom
-//    }
+    if let style = try? JSONDecoder().decode(CustomTextFieldPoringStyle.self, from: styleData) {
+      text = style.custom
+    }
     
   }
   

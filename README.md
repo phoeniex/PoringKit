@@ -26,7 +26,7 @@ One more interesting feature. **PoringKit** provide live update in simulator for
 PoringKit.startLiveStyle("/Users/Awesome/PoringKit/ui.json")
 ```
 
-**PoringKit** Support JSON formation to customize ui elements. Using key to specific group of elements (called 'style').
+**PoringKit** Support JSON format to customize ui elements. Using key to specify group of element (called 'style').
 
 Here the example of JSON style sheet:
 
@@ -37,27 +37,27 @@ Here the example of JSON style sheet:
     "font_size": 22,
     "text_color": "dark_gray"
   },
-  "allianz_tint": {
+  "primary_button": {
     "tint_color": "dark_gray"
   }
 }
 ```
 
-In this code element that define style as "title_text" will be set font name, font size and text color, and element that define style as "allianz_tint" will be set tint_color
+In this code element that define style as "title_text" will be set font name, font size and text color, and element that define style as "primary_button" will be set tint_color
 
 #### Style
 
-To define style in element, You can define via *storyboard* or define directly in code:
+To define style in element, You can define via *storyboard* or define directly in code
 
 ```swift
 button.styles = "primary_button"
 ```
 
-You can also define multiple style in one element. Using space to separate each style.
+You can also define multiple style in one element. Using *space* to separate each style.
 
 #### Fonts
 
-To use font in JSON. You need to define font value in *fonts* dictionary,
+To use font in *style*. You need to define font value in *fonts* dictionary,
 
 ``` swift
 {
@@ -70,7 +70,7 @@ To use font in JSON. You need to define font value in *fonts* dictionary,
 }
 ```
 
-From example. This JSON will know *avenir* font family with 2 font styles (*regular* and *bold*). After define fonts family in *fonts* dictionary. You can use font family and font style to apply in each elements.
+From example above. This *style* will know *avenir* font family with 2 font styles (*regular* and *bold*). After defined font family in *fonts* dictionary. You can use those font family and font style to apply in each elements.
 
 ``` swift
 {
@@ -100,31 +100,29 @@ In case of *font_style* not define with *font_family* in element. It will use *r
 
 #### Share Style
 
-Share style is a style for all of elements that inherit from specific type. For example, If you want all buttons have same font name. Define font name property in shared style button.
+Share style is a style that will apply all elements that inherit from specific type. For example, If you want all buttons to have same font name. Define font name property in shared style button.
 
-Here, **PoringKit** have some of element to support in list below:
+Here, **PoringKit** have some of element to supported in list below:
 
-- view
-- button
-- label
-- image_view
-- text\_field
-- text\_view
-- segmented\_control
-- navigation\_bar
-- tool\_bar
-- switch
-- page\_control
-- table\_view
-- collection\_view
+- **view**
+- **button**
+- **label**
+- **image_view**
+- **text\_field**
+- **text\_view**
+- **segmented\_control**
+- **navigation\_bar**
+- **tool\_bar**
+- **switch**
+- **page\_control**
+- **table\_view**
+- **collection\_view**
 
-Otherwise **PoringKit** provide you a shared property to apply all of style sheets
+#### Share Property
 
-**PoringKit** have some of property to support in list below:
+**PoringKit** also have some of share property to support in list below:
 
-- font_family
-
-Use to set font family to defined style, Example for using shared style sheet:
+- **font_family**: Use to set font family to defined style for example :
 
 ``` swift
 {
@@ -141,11 +139,11 @@ Use to set font family to defined style, Example for using shared style sheet:
 }
 ```
 
-According to example above, All of button element will have white background color, And element that define style as *primary_button* will have *avenir* font family.
+This *style* will apply to all of button elements will have *background color* as white, Elements that defined style as *primary_button* will have *border color* as blue (#0155C8) and *border_radius* as 1. And also have *font family* as *avenir*.
 
 #### Variable
 
-Some style need to be configure by using the same value. You can using variable to apply any duplicate value, For doing this you need to define variable name and value in *constants* dictionary. Then, instead of using direct value. You can use variable name by start with '$' (Dollar Sign). Example below:
+Some style need to be configure by using the same value. You can using variable to apply any duplicate value, For doing this you need to define variable name and value in *constants* dictionary. To use this constants use this variable name by start with '$' (Dollar Sign). In example below:
 
 ```json
 {
@@ -160,7 +158,7 @@ Some style need to be configure by using the same value. You can using variable 
 
 ### Property Type
 
-**PoringKit** using JSON file to customize ui, Some complex type is not support. So, **PoringKit** already create several type to support some ui components in list below
+**PoringKit** using JSON file to customize ui, There are some type of ui property are not support. So, **PoringKit** already created several type to support some ui components in list below
 
 #### Color
 
@@ -308,9 +306,9 @@ String to represent color using Codable.
 
 ### Custom Element
 
-**PoringKit** also support custom element to be theme-able. start by add **PoringStyleElement** protocol into class (Only support `UIAppearance` class).
-Next, implement `apply` function to theme this element. In this function will receive JSON Data of element.
-You can use `Codable` protocol for extract JSON Data to JSON Object.
+**PoringKit** support custom element to be style-able. Starting by add **PoringStyleElement** protocol into the class (Only support `UIAppearance` class).
+Next, implement `apply` function to style this element. In this function will receive JSON Data of element.
+You can use `Codable` in Swift 4 for extract JSON Data to JSON Object.
 
 ```swift
 class CustomTextField: UITextField, PoringStyleElement {

@@ -13,4 +13,5 @@ Pod::Spec.new do |s|
 
   s.dependency 'Fashion', '>= 4.0.0'
   s.dependency 'CryptoSwift', '>= 0.7.1'
+  s.dependency 'SwiftyTimer'
 end

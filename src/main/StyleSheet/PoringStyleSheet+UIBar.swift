@@ -2,7 +2,8 @@
 //  PoringStyleSheet+UIBar.swift
 //  Pods
 //
-// Created by Rawipon Srivibha on 8/22/17.
+//  Created by Rawipon Srivibha on 8/22/17.
+//
 //
 
 import Fashion
@@ -11,14 +12,12 @@ import UIKit
 extension PoringStyleSheet {
 
   func applyShareNavigationBar(_ style: PoringStyle) {
-    print("Apply Share NavBar")
     share { (navigationBar: UINavigationBar) in
       navigationBar.apply(style)
     }
   }
 
   func applyShareToolbar(_ style: PoringStyle) {
-    print("Apply Share ToolBar")
     share { (toolBar: UIToolbar) in
       toolBar.apply(style)
     }

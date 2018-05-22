@@ -1,8 +1,9 @@
 //
 //  Double+CGFloat.swift
-//  PoringKit
+//  Pods
 //
 //  Created by Rawipon Srivibha on 15/5/18.
+//
 //
 
 import Foundation

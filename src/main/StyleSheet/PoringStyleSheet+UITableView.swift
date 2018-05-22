@@ -2,7 +2,8 @@
 //  PoringStyleSheet+UITableView.swift
 //  Pods
 //
-// Created by Rawipon Srivibha on 8/22/17.
+//  Created by Rawipon Srivibha on 8/22/17.
+//
 //
 
 import Fashion
@@ -29,7 +30,6 @@ extension PoringStyleSheet {
   }
 
   func applyShareCollectionView(_ style: PoringStyle) {
-    print("Apply Share UICollectionView")
     share { (collectionView: UICollectionView) in
       collectionView.apply(style)
     }

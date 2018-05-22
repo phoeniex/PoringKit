@@ -1,6 +1,6 @@
 //
-//  NSTextAlignment.swift
-//  AllianzFoundation
+//  NSTextAlignment+Codablr.swift
+//  Pods
 //
 //  Created by Rawipon Srivibha on 21/12/17.
 //

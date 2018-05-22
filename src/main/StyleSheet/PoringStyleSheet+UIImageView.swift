@@ -1,8 +1,9 @@
 //
 //  PoringStyleSheet+UIImageView.swift
-//  PoringKit
+//  Pods
 //
 //  Created by Rawipon Srivibha on 27/12/17.
+//
 //
 
 import Fashion

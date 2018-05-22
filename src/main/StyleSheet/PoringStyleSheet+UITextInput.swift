@@ -30,7 +30,6 @@ extension PoringStyleSheet {
   }
 
   func applyShareTextView(_ style: PoringStyle) {
-    print("Apply Share UITextView")
     share { ( textView: UITextView ) in
       textView.apply(style)
     }

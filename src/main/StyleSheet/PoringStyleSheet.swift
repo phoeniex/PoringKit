@@ -9,6 +9,7 @@
 import Foundation
 import Fashion
 import CryptoSwift
+import SwiftyTimer
 
 public protocol PoringStyleElement: UIAppearance {
   func apply(_ styleData: Data)
