@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fng-ll-rU5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="MOA-82-stb">
+            <objects>
+                <viewController id="Fng-ll-rU5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MAg-EL-5gW"/>
+                        <viewControllerLayoutGuide type="bottom" id="utk-dq-xNj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="StF-KH-8Be">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2016-2018 Allianz Technology (Thailand). All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="n55-j7-kmh">
+                                <rect key="frame" x="20" y="627" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0039215686269999999" green="0.2156862745" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="94f-qL-xhM">
+                                <rect key="frame" x="109" y="144.5" width="157.5" height="45.5"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PoringKit" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="dcB-uQ-dVt">
+                                        <rect key="frame" x="0.0" y="0.0" width="157.5" height="45.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="38"/>
+                                        <color key="textColor" red="0.0039215686269999999" green="0.2156862745" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="n55-j7-kmh" secondAttribute="bottom" constant="20" id="6rb-bF-vad"/>
+                            <constraint firstItem="n55-j7-kmh" firstAttribute="leading" secondItem="StF-KH-8Be" secondAttribute="leading" constant="20" symbolic="YES" id="Gr2-0d-sNH"/>
+                            <constraint firstAttribute="centerX" secondItem="n55-j7-kmh" secondAttribute="centerX" id="H8Y-74-xXp"/>
+                            <constraint firstItem="94f-qL-xhM" firstAttribute="centerY" secondItem="StF-KH-8Be" secondAttribute="centerY" multiplier="1/2" id="PZB-Ow-GPF"/>
+                            <constraint firstItem="94f-qL-xhM" firstAttribute="centerX" secondItem="StF-KH-8Be" secondAttribute="centerX" id="Rpw-yP-98I"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PR6-6x-N4m"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RnN-9L-Jby" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+</document>

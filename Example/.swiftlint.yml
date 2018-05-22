@@ -1,0 +1,11 @@
+disabled_rules:
+  - trailing_newline
+  - trailing_whitespace
+  - vertical_whitespace
+line_length:
+  ignores_comments: true
+excluded:
+  - Pods
+included:
+  - ../src
+  - src
