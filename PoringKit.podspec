@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'PoringKit'
-  s.version          = '1.0.0'
+  s.version          = '1.2.2'
   s.summary          = 'Styling Sheet Customization For UI. Inherit From Fashion'
   s.homepage         = 'https://github.com/phoeniex/PoringKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
