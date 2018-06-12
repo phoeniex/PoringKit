@@ -33,6 +33,17 @@ extension PoringStyleSheet {
 
 extension UIButton {
   
+  func buttonBackgroundImageWithColor(_ color: UIColor) -> UIImage {
+    let rect = CGRect(x: 0.0, y: 0.0, width: 1.0, height: 1.0)
+    UIGraphicsBeginImageContext(rect.size)
+    let context = UIGraphicsGetCurrentContext()
+    context?.setFillColor(color.cgColor)
+    context?.fill(rect)
+    let image = UIGraphicsGetImageFromCurrentImageContext()
+    UIGraphicsEndImageContext()
+    return image!
+  }
+  
   func apply(_ style: PoringStyle) {
     if let fontColor = style.fontColor {
       setTitleColor(fontColor, for: .normal)
@@ -56,6 +67,16 @@ extension UIButton {
       if let styleFont = PoringStyleSheet.font(style: style, defaultFont: titleLabel.font) {
         titleLabel.font = styleFont
       }
+    }
+    
+    if let backgroundColor = style.backgroundColorDisabled {
+      let imageColor = buttonBackgroundImageWithColor(backgroundColor)
+      setBackgroundImage(imageColor, for: .disabled)
+    }
+    
+    if let backgroundColor = style.backgroundColorSelected {
+      let imageColor = buttonBackgroundImageWithColor(backgroundColor)
+      setBackgroundImage(imageColor, for: .selected)
     }
   }
   
