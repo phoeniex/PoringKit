@@ -85,6 +85,6 @@ public struct PoringStyle: Decodable {
 
   // UITextField / UITextView
   var keyboardType: UIKeyboardType?
-  var borderStyle: UITextBorderStyle?
+  var borderStyle: UITextField.BorderStyle?
   
 }

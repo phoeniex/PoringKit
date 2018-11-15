@@ -33,15 +33,15 @@ extension UISegmentedControl {
     var normalAttrs = titleTextAttributes(for: .normal) ?? [:]
     var selectedAttrs = titleTextAttributes(for: .selected) ?? [:]
     let systemFont = UIFont.systemFont(ofSize: UIFont.systemFontSize)
-    let defaultFont = normalAttrs[NSAttributedStringKey.font] as? UIFont ?? systemFont
+    let defaultFont = normalAttrs[.font] as? UIFont ?? systemFont
     
     // Normal Attribute
     if let font = PoringStyleSheet.font(style: style, defaultFont: defaultFont) {
-      normalAttrs[NSAttributedStringKey.font] = font
+      normalAttrs[.font] = font
     }
     
-    normalAttrs[NSAttributedStringKey.foregroundColor] =? style.fontColor
-    normalAttrs[NSAttributedStringKey.backgroundColor] =? style.backgroundColor
+    normalAttrs[.foregroundColor] =? style.fontColor
+    normalAttrs[.backgroundColor] =? style.backgroundColor
     
     // Apply Attribute if Custom Something
     if !normalAttrs.isEmpty {
@@ -53,11 +53,11 @@ extension UISegmentedControl {
                                              style: style.fontStyleSelected,
                                              size: style.fontSizeSelected,
                                              defaultFont: defaultFont) {
-      selectedAttrs[NSAttributedStringKey.font] = fontSelected
+      selectedAttrs[.font] = fontSelected
     }
     
-    selectedAttrs[NSAttributedStringKey.foregroundColor] =? style.fontColorSelected
-    selectedAttrs[NSAttributedStringKey.backgroundColor] =? style.backgroundColorSelected
+    selectedAttrs[.foregroundColor] =? style.fontColorSelected
+    selectedAttrs[.backgroundColor] =? style.backgroundColorSelected
     
     // Apply Attribute if Custom Something
     if !selectedAttrs.isEmpty {
@@ -65,10 +65,10 @@ extension UISegmentedControl {
     }
   }
   
-  func set(_ attributes: [AnyHashable: Any] = [:], for state: UIControlState = .normal) {
+  func set(_ attributes: [NSAttributedString.Key: Any] = [:], for state: UIControl.State = .normal) {
     setTitleTextAttributes(attributes, for: state)
     
-    if let backgroundColor = attributes[NSAttributedStringKey.backgroundColor] as? UIColor {
+    if let backgroundColor = attributes[.backgroundColor] as? UIColor {
       let backgroundImage = segmentBackgroundImageWithColor(backgroundColor)
       setBackgroundImage(backgroundImage, for: state, barMetrics: .default)
     }

@@ -40,7 +40,7 @@ extension UINavigationBar {
   }
   
   func applyTitleTextAttribute(_ style: PoringStyle) {
-    var styledTextAttribute: [NSAttributedStringKey: Any] = [:]
+    var styledTextAttribute: [NSAttributedString.Key: Any] = [:]
     var defaultFont: UIFont? = nil
     
     if let nonNilTitleTextAttributes = titleTextAttributes {
@@ -59,7 +59,7 @@ extension UINavigationBar {
   
   @available(iOS 11.0, *)
   func applyLargeTitleTextAttribute(_ style: PoringStyle) {
-    var largeStyledTextAttribute: [NSAttributedStringKey: Any] = [:]
+    var largeStyledTextAttribute: [NSAttributedString.Key: Any] = [:]
     var defaultLargeFont: UIFont? = nil
     
     if let nonNilTitleTextAttributes = largeTitleTextAttributes {

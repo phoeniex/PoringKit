@@ -90,16 +90,16 @@ extension UIBarButtonItem {
     tintColor =? style.tintColor
   }
   
-  private func applyTextAttribute(_ style: PoringStyle, for state: UIControlState) {
-    var styledTextAttribute: [NSAttributedStringKey: Any] = [:]
+  private func applyTextAttribute(_ style: PoringStyle, for state: UIControl.State) {
+    var styledTextAttribute: [NSAttributedString.Key: Any] = [:]
     var defaultFont: UIFont? = nil
     
     if let nonNilTitleTextAttributes = titleTextAttributes(for: .normal) {
       nonNilTitleTextAttributes.forEach {
-        styledTextAttribute[NSAttributedStringKey(rawValue: $0)] = $1
+        styledTextAttribute[$0] = $1
       }
       
-      defaultFont = nonNilTitleTextAttributes[NSAttributedStringKey.font.rawValue] as? UIFont
+      defaultFont = nonNilTitleTextAttributes[.font] as? UIFont
     }
   
     var fontColor: UIColor?
